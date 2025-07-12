@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildMate | Cursos</title>
+    <link rel="stylesheet" href="/styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Inter] font-semibold">
+    <header class="bg-[#F2F2F7] px-5 pt-5 pb-12 md:pt-12 md:pb-16 md:px-32 flex flex-col gap-16">
+        <nav class=" flex items-center justify-between">
+            <div class="flex gap-2 md:gap-6">
+                <img src="/assets/images/logo-first-letter.png" class="h-8" alt="">
+                <div class="w-1 h-8 rounded-sm bg-[#FF9100] "></div>
+                <h3 class="font-bold text-4xl font-[Josefin_Sans] tracking-[-4px]">Cursos</h3>
+            </div>
+            <div class="items-center gap-14 font-bold hidden md:flex">
+                <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#inicio">Início</a>
+                <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#sobre">Sobre</a>
+                <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#conteudos">Conteúdos</a>
+                <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#diferencial">Diferencial</a>
+                <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#cases">Cases</a>
+                <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#professores">Professores</a>
+            </div>
+
+            <a class="hidden md:block" href="#">
+                <div class="p-1 bg-gradient-to-r from-[#FF9100] to-[#FFC271] hover:to-[#FF9100] transition duration-200 ease-in-out rounded-sm">
+                    <button class="flex hover:cursor-pointer items-center gap-1 font-bold bg-white py-2 px-3 hover:bg-neutral-50 transition duration-1 ease-in-out">
+                        <p class="bg-gradient-to-r from-[#FF9100] to-[#FFC271] bg-clip-text text-transparent">Inscreva-se agora</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" color="#FFC271" width="20" height="12" viewBox="0 0 16 9"><path fill="currentColor" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="currentColor" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg>
+                    </button>
+                </div>
+            </a>
+            <div id="menu-wrapper" class="md:hidden">
+                <button id="menu-btn" class="hover:cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>
+                </button>
+                <div id="menu" class="hidden flex-col gap-5 bg-white absolute right-3 left-1/2 p-5 rounded-md font-bold">
+                    <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#inicio">Início</a>
+                    <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#sobre">Sobre</a>
+                    <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#conteudos">Conteúdos</a>
+                    <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#diferencial">Diferencial</a>
+                    <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#cases">Cases</a>
+                    <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#professores">Professores</a>
+                </div>
+            </div>
+
+        </nav>
+        <div class="flex flex-col gap-5 md:flex-row md:justify-between justify-center items-center">
+            <div class="flex flex-col justify-center items-center text-center gap-14 md:w-1/2 md:text-start md:items-start">
+                <div class="flex gap-7 font-bold text-white">
+                    <p class="bg-[#FF9100] p-2 rounded-sm flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3s1.34 3 3 3m-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5S5 6.34 5 8s1.34 3 3 3m0 2c-2.33 0-7 1.17-7 3.5V18c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-1.5c0-2.33-4.67-3.5-7-3.5m8 0c-.29 0-.62.02-.97.05c.02.01.03.03.04.04c1.14.83 1.93 1.94 1.93 3.41V18c0 .35-.07.69-.18 1H22c.55 0 1-.45 1-1v-1.5c0-2.33-4.67-3.5-7-3.5"/></svg>
+                        Presencial
+                    </p>
+                    <p class="bg-[#FF9100] p-2 rounded-sm flex gap-2 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M.947 1.743c.264-.109.561.035.748.251a1.4 1.4 0 0 0 .489.363a1.406 1.406 0 0 0 1.975-1.4c-.022-.274.075-.574.325-.691l.41-.193a.95.95 0 0 1 1.237.5l.483 1.118l-.052.113l-.001.002l-3.19 7.367l-.346.787L.069 3.12a.95.95 0 0 1 .458-1.204zm11.322 2.004c.185-.218.483-.361.747-.253l.443.183a.973.973 0 0 1 .47 1.235l-3.672 8.5a.973.973 0 0 1-1.269.513L4.55 12.034a.973.973 0 0 1-.514-1.268l.481-1.093L7.71 2.3a.973.973 0 0 1 1.268-.514l.434.203c.25.117.347.417.322.692a1.45 1.45 0 0 0 .409 1.143a1.444 1.444 0 0 0 2.127-.077" clip-rule="evenodd"/></svg>
+                        Vagas limitadas
+                    </p>
+                </div>
+                <div class="flex flex-col gap-5 md:gap-14 max-w-4xl">
+                    <h1 class="text-4xl md:text-6xl font-bold font-[Josefin_Sans]">EFICIÊNCIA EM OBRA COM <span class="text-[#FF9100]">LEAN CONSTRUCTION</span></h1>
+                    <h2 class="text-xl md:text-2xl text-[#757575]">Transforme radicalmente a gestão do canteiro, elimine desperdícios — como excesso de estoque, retrabalhos e tempos de espera — promovendo um fluxo contínuo de valor, maior produtividade, segurança e sustentabilidade, com foco em entregar mais qualidade e valor ao cliente, dentro do prazo e do orçamento.</h2>
+                </div>
+                <a href="#">
+                    <div class="p-1 bg-gradient-to-r from-[#FF9100] to-[#FFC271] hover:to-[#FF9100] transition duration-200 ease-in-out w-fit rounded-sm">
+                        <button class="flex hover:cursor-pointer items-center gap-1 font-bold bg-white py-2 px-3 hover:bg-neutral-50 transition duration-200 ease-in-out">
+                            <p class="bg-gradient-to-r from-[#FF9100] to-[#FFC271] bg-clip-text text-transparent">Inscreva-se agora</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" color="#FFC271" width="20" height="12" viewBox="0 0 16 9"><path fill="currentColor" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="currentColor" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg>
+                        </button>
+                    </div>
+                </a>
+
+                <div class="font-bold text-start flex items-center w-full justify-between">
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-sm text-[#FF9100]">Modalidade</h3>
+                        <h4 class="text-[#303030]">Presencial</h4>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-sm text-[#FF9100]">Início</h3>
+                        <h4 class="text-[#303030]">7 Ago, 2025</h4>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-sm text-[#FF9100]">Duração</h3>
+                        <h4 class="text-[#303030]">40h</h4>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-sm text-[#FF9100]">Vagas</h3>
+                        <h4 class="text-[#303030]">10</h4>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/hero-image.png" class="h-full hidden md:block" alt="">
+        </div>
+    </header>
+
+    <section class="px-5 py-24 flex flex-col items-center justify-center gap-10 md:flex-row md:gap-36 md:px-32">
+        <div class="p-1 w-fit bg-gradient-to-r rounded-tl-2xl rounded-br-2xl from-[#FF9100] to-[#FFC271]">
+            <div class="p-4 h-72 w-80 text-center justify-between flex flex-col items-center text-[#FF9100] gap-1 rounded-tl-2xl rounded-br-2xl bg-[#FFE2BC]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24"><path fill="currentColor" d="M9 15c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4m13.1-8.16c.01-.11.02-.22.02-.34s-.01-.23-.03-.34l.74-.58c.07-.05.08-.15.04-.22l-.7-1.21c-.04-.08-.14-.1-.21-.08l-.86.35c-.18-.14-.38-.25-.59-.34l-.13-.93A.18.18 0 0 0 20.2 3h-1.4c-.09 0-.16.06-.17.15l-.13.93c-.21.09-.41.21-.59.34l-.87-.35c-.08-.03-.17 0-.21.08l-.7 1.21c-.04.08-.03.17.04.22l.74.58a2 2 0 0 0 0 .68l-.74.58c-.07.05-.08.15-.04.22l.7 1.21c.04.08.14.1.21.08l.87-.35c.18.14.38.25.59.34l.13.93c.01.09.08.15.17.15h1.4c.09 0 .16-.06.17-.15l.13-.93c.21-.09.41-.21.59-.34l.87.35c.08.03.17 0 .21-.08l.7-1.21c.04-.08.03-.17-.04-.22zm-2.6.91a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m.42 3.93l-.5-.87c-.03-.06-.1-.08-.15-.06l-.62.25q-.195-.15-.42-.24l-.09-.66A.15.15 0 0 0 18 10h-1c-.06 0-.11.04-.12.11l-.09.66c-.15.06-.29.15-.42.24l-.62-.25c-.06-.02-.12 0-.15.06l-.5.87c-.03.06-.02.12.03.16l.53.41c-.01.08-.02.16-.02.24s.01.17.02.24l-.53.41c-.05.04-.06.11-.03.16l.5.87c.03.06.1.08.15.06l.62-.25q.195.15.42.24l.09.66c.01.07.06.11.12.11h1c.06 0 .12-.04.12-.11l.09-.66c.15-.06.29-.15.42-.24l.62.25c.06.02.12 0 .15-.06l.5-.87c.03-.06.02-.12-.03-.16l-.52-.41c.01-.08.02-.16.02-.24s-.01-.17-.02-.24l.53-.41c.05-.04.06-.11.04-.17m-2.42 1.65c-.46 0-.83-.38-.83-.83c0-.46.38-.83.83-.83s.83.38.83.83c0 .46-.37.83-.83.83M4.74 9h8.53c.27 0 .49-.22.49-.49v-.02a.49.49 0 0 0-.49-.49H13c0-1.48-.81-2.75-2-3.45v.95c0 .28-.22.5-.5.5s-.5-.22-.5-.5V4.14C9.68 4.06 9.35 4 9 4s-.68.06-1 .14V5.5c0 .28-.22.5-.5.5S7 5.78 7 5.5v-.95C5.81 5.25 5 6.52 5 8h-.26a.49.49 0 0 0-.49.49v.03c0 .26.22.48.49.48M9 13c1.86 0 3.41-1.28 3.86-3H5.14c.45 1.72 2 3 3.86 3"/></svg>
+                <h3 class="font-[Josefin_Sans] font-bold text-2xl">EXPERIÊNCIA REAL</h3>
+                <p class="text-xl">Ministrado por engenheiros que lideraram obras com mais de R$ 100 milhões em investimentos.</p>
+            </div>
+        </div>
+        <div class="p-1 w-fit bg-gradient-to-r rounded-tl-2xl rounded-br-2xl from-[#FF9100] to-[#FFC271]">
+            <div class="p-4 h-72 w-80 text-center justify-between flex flex-col items-center text-[#FF9100] gap-1 rounded-tl-2xl rounded-br-2xl bg-[#FFE2BC]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M13.11 13.5a1.71 1.71 0 0 0-2.22 0a1.7 1.7 0 0 1-.973.403a1.71 1.71 0 0 0-1.569 1.569c-.028.359-.17.7-.403.973a1.71 1.71 0 0 0 0 2.219a1.7 1.7 0 0 1 .403.973a1.71 1.71 0 0 0 1.57 1.57c.358.028.699.169.973.402a1.71 1.71 0 0 0 2.218 0a1.7 1.7 0 0 1 .973-.403a1.71 1.71 0 0 0 1.57-1.569c.028-.358.169-.7.402-.973a1.71 1.71 0 0 0 0-2.219a1.7 1.7 0 0 1-.403-.973a1.71 1.71 0 0 0-1.569-1.569a1.7 1.7 0 0 1-.973-.403m.902 3.603a.75.75 0 1 0-1.024-1.097l-1.63 1.523l-.346-.323a.75.75 0 0 0-1.024 1.097l.857.8a.75.75 0 0 0 1.024 0z" clip-rule="evenodd"/><path fill="currentColor" d="M2 12V8c0-2.828 0-4.243.879-5.121C3.757 2 5.172 2 8 2h8c2.828 0 4.243 0 5.121.879C22 3.757 22 5.172 22 8v4c0 2.828 0 4.243-.879 5.121c-.835.836-2.156.877-4.717.879a1.71 1.71 0 0 0-.35-1.555a1.7 1.7 0 0 1-.403-.973a1.71 1.71 0 0 0-1.569-1.569a1.7 1.7 0 0 1-.973-.403a1.71 1.71 0 0 0-2.219 0a1.7 1.7 0 0 1-.973.403a1.71 1.71 0 0 0-1.569 1.569c-.028.359-.17.7-.403.973A1.71 1.71 0 0 0 7.595 18c-2.56-.002-3.88-.043-4.716-.879C2 16.243 2 14.828 2 12" opacity="0.5"/><path fill="currentColor" d="M8.25 6A.75.75 0 0 1 9 5.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 6M7 8.75a.75.75 0 0 0 0 1.5h10a.75.75 0 0 0 0-1.5z"/></svg>
+                <h3 class="font-[Josefin_Sans] font-bold text-2xl">ESPECIALISTAS CERTIFICADOS</h3>
+                <p class="text-xl">Certificação internacional com métodos testados nas linhas da Porsche.</p>
+            </div>
+        </div>
+        <div class="p-1 w-fit bg-gradient-to-r rounded-tl-2xl rounded-br-2xl from-[#FF9100] to-[#FFC271]">
+            <div class="p-4 h-72 w-80 text-center justify-between flex flex-col items-center text-[#FF9100] gap-1 rounded-tl-2xl rounded-br-2xl bg-[#FFE2BC]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12c5.16-1.26 9-6.45 9-12V5zm7 10c0 4.52-2.98 8.69-7 9.93c-4.02-1.24-7-5.41-7-9.93V6.3l7-3.11l7 3.11zm-11.59.59L6 13l4 4l8-8l-1.41-1.42L10 14.17z"/><path fill="currentColor" d="M5 6.3V11c0 4.52 2.98 8.69 7 9.93c4.02-1.23 7-5.41 7-9.93V6.3l-7-3.11zM18 9l-8 8l-4-4l1.41-1.41L10 14.17l6.59-6.59z" opacity="0.3"/></svg>
+                <h3 class="font-[Josefin_Sans] font-bold text-2xl">PROCESSOS COMPROVADOS</h3>
+                <p class="text-xl">Aprenda ferramentas que já reduziram desperdícios em mais de 30 obras no Brasil.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col items-center gap-32 px-5 py-24 md:px-32 md:flex-row md:items-start md:justify-between md:gap-0">
+        <div class="flex flex-col gap-10">
+            <div class="flex gap-3">
+                <div class=" w-2 rounded-tl-sm rounded-bl-sm bg-gradient-to-b h-7 from-[#FF9100] to-[#FFC271]"></div>
+                <h2 class="text-xl font-bold md:text-2xl font-[Josefin_Sans]">A SUA OBRA ENFRENTA ESSES <span class="text-[#FF9100]">DESAFIOS?</span></h2>
+            </div>
+            <div class="flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="#ee4c43" fill-rule="evenodd" d="M256 42.667c117.803 0 213.334 95.53 213.334 213.333S373.803 469.334 256 469.334S42.667 373.803 42.667 256S138.197 42.667 256 42.667m48.918 134.25L256 225.836l-48.917-48.917l-30.165 30.165L225.835 256l-48.917 48.918l30.165 30.165L256 286.166l48.918 48.917l30.165-30.165L286.166 256l48.917-48.917z"/></svg>
+                Desperdício de materiais, tempo e mão de obra.
+            </div>
+            <div class="flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="#ee4c43" fill-rule="evenodd" d="M256 42.667c117.803 0 213.334 95.53 213.334 213.333S373.803 469.334 256 469.334S42.667 373.803 42.667 256S138.197 42.667 256 42.667m48.918 134.25L256 225.836l-48.917-48.917l-30.165 30.165L225.835 256l-48.917 48.918l30.165 30.165L256 286.166l48.918 48.917l30.165-30.165L286.166 256l48.917-48.917z"/></svg>
+                Produtividade baixa da equipe.
+            </div>
+            <div class="flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="#ee4c43" fill-rule="evenodd" d="M256 42.667c117.803 0 213.334 95.53 213.334 213.333S373.803 469.334 256 469.334S42.667 373.803 42.667 256S138.197 42.667 256 42.667m48.918 134.25L256 225.836l-48.917-48.917l-30.165 30.165L225.835 256l-48.917 48.918l30.165 30.165L256 286.166l48.918 48.917l30.165-30.165L286.166 256l48.917-48.917z"/></svg>
+                Falta de planejamento e controle logístico.
+            </div>
+            <div class="flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="#ee4c43" fill-rule="evenodd" d="M256 42.667c117.803 0 213.334 95.53 213.334 213.333S373.803 469.334 256 469.334S42.667 373.803 42.667 256S138.197 42.667 256 42.667m48.918 134.25L256 225.836l-48.917-48.917l-30.165 30.165L225.835 256l-48.917 48.918l30.165 30.165L256 286.166l48.918 48.917l30.165-30.165L286.166 256l48.917-48.917z"/></svg>
+                Retrabalho e atrasos frequentes.
+            </div>
+            <div class="flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="#ee4c43" fill-rule="evenodd" d="M256 42.667c117.803 0 213.334 95.53 213.334 213.333S373.803 469.334 256 469.334S42.667 373.803 42.667 256S138.197 42.667 256 42.667m48.918 134.25L256 225.836l-48.917-48.917l-30.165 30.165L225.835 256l-48.917 48.918l30.165 30.165L256 286.166l48.918 48.917l30.165-30.165L286.166 256l48.917-48.917z"/></svg>
+                Falta de comunicação entre setores.
+            </div>
+            <div class="flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="#ee4c43" fill-rule="evenodd" d="M256 42.667c117.803 0 213.334 95.53 213.334 213.333S373.803 469.334 256 469.334S42.667 373.803 42.667 256S138.197 42.667 256 42.667m48.918 134.25L256 225.836l-48.917-48.917l-30.165 30.165L225.835 256l-48.917 48.918l30.165 30.165L256 286.166l48.918 48.917l30.165-30.165L286.166 256l48.917-48.917z"/></svg>
+                Qualidade comprometida na entrega final.
+            </div>
+            <div class="flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="#ee4c43" fill-rule="evenodd" d="M256 42.667c117.803 0 213.334 95.53 213.334 213.333S373.803 469.334 256 469.334S42.667 373.803 42.667 256S138.197 42.667 256 42.667m48.918 134.25L256 225.836l-48.917-48.917l-30.165 30.165L225.835 256l-48.917 48.918l30.165 30.165L256 286.166l48.918 48.917l30.165-30.165L286.166 256l48.917-48.917z"/></svg>
+                Não sabem dimensionar o canteiro.
+            </div>
+            <p class="text-xl">Se respondeu sim a qualquer um deles, este curso é para <span class="text-[#FF9100]">você.</span></p>
+        </div>
+        <div class="hidden h-96 w-0.5 bg-[#D9D9D9] md:block"></div>
+        <div class="p-8 border border-[#D9D9D9] rounded-md flex flex-col gap-5">
+            <div class="text-[#FF9100] bg-[#FFE2BC] p-1.5 rounded-md flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10 3q-.425 0-.712-.288T9 2t.288-.712T10 1h4q.425 0 .713.288T15 2t-.288.713T14 3zm2 11q.425 0 .713-.288T13 13V9q0-.425-.288-.712T12 8t-.712.288T11 9v4q0 .425.288.713T12 14m0 8q-1.85 0-3.488-.712T5.65 19.35t-1.937-2.863T3 13t.713-3.488T5.65 6.65t2.863-1.937T12 4q1.55 0 2.975.5t2.675 1.45l.7-.7q.275-.275.7-.275t.7.275t.275.7t-.275.7l-.7.7Q20 8.6 20.5 10.025T21 13q0 1.85-.713 3.488T18.35 19.35t-2.863 1.938T12 22"/></svg>
+                <p>Fim das inscrições em:</p>
+            </div>
+            <div id="timer" class="flex items-center justify-between">
+                <div class="flex flex-col gap-1 items-center w-8">
+                    <p id="days" class="text-white bg-[#FF9100] p-1 pt-1.5 rounded-md w-full text-center h-10">-</p>
+                    <p>dias</p>
+                </div>
+                <div class="flex flex-col gap-1 items-center w-8">
+                    <p id="hours" class="text-white bg-[#FF9100] p-1 pt-1.5 rounded-md w-full text-center h-10">-</p>
+                    <p>horas</p>
+                </div>
+                <div class="flex flex-col gap-1 items-center w-8">
+                    <p id="minutes" class="text-white bg-[#FF9100] p-1 pt-1.5 rounded-md w-full text-center h-10">-</p>
+                    <p>min</p>
+                </div>
+                <div class="flex flex-col gap-1 items-center w-8">
+                    <p id="seconds" class="text-white bg-[#FF9100] p-1 pt-1.5 rounded-md w-full text-center h-10">-</p>
+                    <p>seg</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/scripts/index.js"></script>
+</body>
+</html>
