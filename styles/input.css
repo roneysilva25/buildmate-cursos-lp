@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.accordion-body.active {
+    max-height: 350px;
+}
+
+.accordion-arrow {
+    transform: rotate(0deg);
+    transition: all 0.3s ease-out;
+}
+
+.accordion-arrow.active {
+    transform: rotate(180deg);
+}

@@ -32,6 +32,16 @@ function getTimeLeft(endDate) {
     }
 }
 
+function accordion() {
+    const accordions = document.querySelectorAll(".accordion-header")
+    for (const acc of accordions) {
+        acc.addEventListener("click", () => {
+            acc.nextElementSibling.classList.toggle("active")
+            acc.querySelector(".accordion-arrow").classList.toggle("active")
+        })
+    }
+}
+
 function updateTimer() {
     const DATE_THE_COURSE_WILL_HAPPEN = new Date("2025-08-07")
     setInterval(() => {
@@ -51,3 +61,4 @@ function updateTimer() {
 
 menuModal()
 updateTimer()
+accordion()
