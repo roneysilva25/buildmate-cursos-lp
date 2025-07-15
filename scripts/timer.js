@@ -18,7 +18,7 @@ function getTimeLeft(endDate) {
 }
 
 function updateTimer() {
-    const DATE_THE_COURSE_WILL_HAPPEN = new Date("2025-07-16")
+    const DATE_THE_COURSE_WILL_HAPPEN = new Date("2025-08-07")
     setInterval(() => {
         const timer = getTimeLeft(DATE_THE_COURSE_WILL_HAPPEN)
         document.querySelector("#days").innerHTML = timer.daysLeft

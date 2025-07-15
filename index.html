@@ -39,7 +39,7 @@
                 <button id="menu-btn" class="hover:cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>
                 </button>
-                <div id="menu" class="hidden flex-col gap-5 bg-white absolute right-3 left-1/2 p-5 rounded-md font-bold">
+                <div id="floating-menu" class="flex flex-col gap-5 bg-white absolute right-3 left-1/2 p-5 rounded-md font-bold">
                     <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#inicio">Início</a>
                     <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#sobre">Sobre</a>
                     <a class="border-b-[#FF9100] hover:border-b-4 transition-all duration-75 ease-in-out" href="#conteudos">Conteúdos</a>
@@ -52,8 +52,8 @@
         </nav>
         <div class="flex flex-col gap-5 md:flex-row md:justify-between justify-center items-center">
             <div class="flex flex-col justify-center items-center text-center gap-14 md:w-1/2 md:text-start md:items-start">
-                <div class="flex gap-7 font-bold text-white">
-                    <p class="bg-[#FF9100] p-2 rounded-sm flex gap-2">
+                <div class="flex gap-7 text-[0.7rem] font-bold text-white md:text-sm">
+                    <p class="bg-[#FF9100] p-2 rounded-sm flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3s1.34 3 3 3m-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5S5 6.34 5 8s1.34 3 3 3m0 2c-2.33 0-7 1.17-7 3.5V18c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-1.5c0-2.33-4.67-3.5-7-3.5m8 0c-.29 0-.62.02-.97.05c.02.01.03.03.04.04c1.14.83 1.93 1.94 1.93 3.41V18c0 .35-.07.69-.18 1H22c.55 0 1-.45 1-1v-1.5c0-2.33-4.67-3.5-7-3.5"/></svg>
                         Presencial
                     </p>
@@ -75,21 +75,21 @@
                     </div>
                 </a>
 
-                <div class="font-bold text-start flex items-center w-full justify-between">
+                <div class="font-bold text-start text-sm md:text-lg flex items-center w-full justify-between">
                     <div class="flex flex-col gap-2">
-                        <h3 class="text-sm text-[#FF9100]">Modalidade</h3>
+                        <h3 class="text-[0.7rem] md:text-sm text-[#FF9100]">Modalidade</h3>
                         <h4 class="text-[#303030]">Presencial</h4>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <h3 class="text-sm text-[#FF9100]">Início</h3>
+                        <h3 class="text-[0.7rem] md:text-sm text-[#FF9100]">Início</h3>
                         <h4 class="text-[#303030]">7 Ago, 2025</h4>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <h3 class="text-sm text-[#FF9100]">Duração</h3>
+                        <h3 class="text-[0.7rem] md:text-sm text-[#FF9100]">Duração</h3>
                         <h4 class="text-[#303030]">40h</h4>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <h3 class="text-sm text-[#FF9100]">Vagas</h3>
+                        <h3 class="text-[0.7rem] md:text-sm text-[#FF9100]">Vagas</h3>
                         <h4 class="text-[#303030]">10</h4>
                     </div>
                 </div>
@@ -159,8 +159,8 @@
             <p class="text-xl">Se respondeu sim a qualquer um deles, este curso é para <span class="text-[#FF9100]">você.</span></p>
         </div>
         <div class="hidden h-96 w-0.5 bg-[#D9D9D9] md:block"></div>
-        <div class="p-8 border border-[#D9D9D9] rounded-md flex flex-col gap-5">
-            <div class="text-[#FF9100] bg-[#FFE2BC] p-1.5 rounded-md flex items-center gap-1">
+        <div class="p-8 border border-[#D9D9D9] rounded-md flex flex-col gap-8">
+            <div class="text-[#FF9100] text-sm bg-[#FFE2BC] p-1.5 rounded-md flex items-center gap-1">
                 <svg class="animate-pulse" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10 3q-.425 0-.712-.288T9 2t.288-.712T10 1h4q.425 0 .713.288T15 2t-.288.713T14 3zm2 11q.425 0 .713-.288T13 13V9q0-.425-.288-.712T12 8t-.712.288T11 9v4q0 .425.288.713T12 14m0 8q-1.85 0-3.488-.712T5.65 19.35t-1.937-2.863T3 13t.713-3.488T5.65 6.65t2.863-1.937T12 4q1.55 0 2.975.5t2.675 1.45l.7-.7q.275-.275.7-.275t.7.275t.275.7t-.275.7l-.7.7Q20 8.6 20.5 10.025T21 13q0 1.85-.713 3.488T18.35 19.35t-2.863 1.938T12 22"/></svg>
                 <p>Fim das inscrições em:</p>
             </div>
@@ -186,7 +186,7 @@
     </section>
 
     <section data-aos="fade-up" class="flex flex-col items-center gap-30 px-5 py-24 md:px-32 font-bold md:gap-40">
-        <div class="flex flex-col items-center gap-5">
+        <div class="flex flex-col gap-5 md:items-center">
             <h3 class="flex items-center gap-2 text-[#FF9100] text-md">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M12 2c.896 0 1.764.118 2.59.339l-2.126 2.125A3 3 0 0 0 12.04 5H12a7 7 0 1 0 7 7v-.04q.29-.18.535-.425l2.126-2.125c.221.826.339 1.694.339 2.59c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m-.414 5.017c0 .851-.042 1.714.004 2.564l-.54.54a2 2 0 1 0 2.829 2.829l.54-.54c.85.046 1.712.004 2.564.004a5 5 0 1 1-5.397-5.397m6.918-4.89a1 1 0 0 1 .617.923v1.83h1.829a1 1 0 0 1 .707 1.707L18.12 10.12a1 1 0 0 1-.707.293H15l-1.828 1.829a1 1 0 0 1-1.415-1.415L13.586 9V6.586a1 1 0 0 1 .293-.708l3.535-3.535a1 1 0 0 1 1.09-.217"/></g></svg>
                 Público
@@ -373,7 +373,7 @@
         </div>
         <div class="flex flex-1/2 flex-col items-center gap-32">
             <div class="border-1 flex flex-col gap-5 border-[#D9D9D9] rounded-md p-10">
-                <p class="animate-pulse flex gap-1 items-center text-red-700 bg-red-200 rounded-md py-1 px-2">
+                <p class="animate-pulse flex text-sm gap-1 items-center text-red-700 bg-red-200 rounded-md py-1 px-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"/></svg>
                     Oferta por tempo limitado
                 </p>
@@ -381,12 +381,20 @@
                 <p class="line-through text-2xl text-red-700">R$ 5.999,90</p>
                 <p class="text-2xl text-[#757575]">Por</p>
                 <p class="text-3xl text-green-500">10x de R$ 149,90</p>
+                <a href="#">
+                    <div class="p-1 bg-gradient-to-r from-[#FF9100] to-[#FFC271] hover:to-[#FF9100] transition duration-200 ease-in-out w-fit rounded-sm">
+                        <button class="flex hover:cursor-pointer items-center gap-1 font-bold bg-white py-2 px-3 hover:bg-neutral-50 transition duration-200 ease-in-out">
+                            <svg class="text-[#FF9100]" xmlns="http://www.w3.org/2000/svg" width="15.75" height="14" viewBox="0 0 576 512"><path fill="currentColor" d="M0 24C0 10.7 10.7 0 24 0h45.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5l-51.6-271c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24m128 440a48 48 0 1 1 96 0a48 48 0 1 1-96 0m336-48a48 48 0 1 1 0 96a48 48 0 1 1 0-96M252 160c0 11 9 20 20 20h44v44c0 11 9 20 20 20s20-9 20-20v-44h44c11 0 20-9 20-20s-9-20-20-20h-44V96c0-11-9-20-20-20s-20 9-20 20v44h-44c-11 0-20 9-20 20"/></svg>
+                            <p class="bg-gradient-to-r from-[#FF9100] to-[#FFC271] bg-clip-text text-transparent">Ir para o carrinho</p>
+                        </button>
+                    </div>
+                </a>
             </div>
             <div class="flex flex-col items-center gap-2 md:flex-row-reverse">
-                <div class="flex items-center gap-6 md:flex-col md:gap-26">
-                    <p class="text-[#757575]">ARACAJU, SE</p>
-                    <p class="text-[#757575]">4 SÁBADOS</p>
-                    <p class="text-[#757575]">07 AGO, 2025</p>
+                <div class="flex text-sm items-center gap-6 md:text-[1rem] md:flex-col md:gap-26 text-[#757575]">
+                    <p>ARACAJU, SE</p>
+                    <p>4 SÁBADOS</p>
+                    <p>07 AGO, 2025</p>
                 </div>
                 <div class="flex items-center md:flex-col">
                     <div class="flex items-center md:flex-col">
@@ -409,7 +417,161 @@
                 </div>
             </div>
         </div>
+    </section>
 
+    <section data-aos="fade-up" class="flex flex-col items-center gap-30 px-5 py-24 md:px-32 md:gap-40">
+        <div class="flex flex-col text-center font-bold items-center gap-5">
+            <h3 class="flex items-center gap-2 text-[#FF9100] text-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="currentColor" d="M3.75 10.999h4.5a.75.75 0 0 1 .102 1.493l-.102.007h-4.5a.75.75 0 0 1-.102-1.493zh4.5zm1.47-5.78a.75.75 0 0 1 .976-.072l.084.073l3.5 3.5a.75.75 0 0 1-.976 1.133L8.72 9.78l-3.5-3.5a.75.75 0 0 1 0-1.06M11.75 3a.75.75 0 0 1 .743.648l.007.102v4.5a.75.75 0 0 1-1.493.102L11 8.25v-4.5a.75.75 0 0 1 .75-.75"/></svg>
+                Diferencial
+            </h3>
+            <h2 class="text-3xl md:text-4xl">Qual o nosso diferencial?</h2>
+            <p class="text-[#757575] max-w-lg">Veja o que este curso pode te proporcionar.</p>
+        </div>
+        <div class="grid grid-cols-1 gap-22 md:grid-cols-3 md:justify-between md:gap-x-40 md:gap-y-20">
+            <div class="flex flex-col gap-2">
+                <div class="w-fit text-white bg-[#FF9100] p-3 rounded-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M10.213 2.538A5.499 5.499 0 0 0 1.595 8.01a.75.75 0 0 1-1.474.277a6.999 6.999 0 0 1 11.163-6.821l.612-.612a.5.5 0 0 1 .854.353V3.5a.5.5 0 0 1-.5.5H9.957a.5.5 0 0 1-.353-.853zm2.791 2.577a.75.75 0 0 1 .876.598a6.999 6.999 0 0 1-11.164 6.821l-.612.613a.5.5 0 0 1-.854-.354V10.5a.5.5 0 0 1 .5-.5h2.293a.5.5 0 0 1 .354.854l-.61.609a5.499 5.499 0 0 0 8.618-5.472a.75.75 0 0 1 .6-.876M8.5 5.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0M7 7.525a3 3 0 0 0-2.517 1.367c-.188.29.05.633.395.633h4.244c.345 0 .583-.343.395-.633A3 3 0 0 0 7 7.525" clip-rule="evenodd"/></svg>
+                </div>
+                <h4>100% Presencial</h4>
+                <p class="text-[#757575] w-80">Mostraremos um Lean construction realmente aplicado e não somente teorias.</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="w-fit text-white bg-[#FF9100] p-3 rounded-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 8 8"><path fill="currentColor" d="M2 1v3h3V1m0 7L3.5 6L2 8V5L1 4V1l1-1h3l1 1v3L5 5"/></svg>
+                </div>
+                <h4>Metodologia comprovada</h4>
+                <p class="text-[#757575] w-80">Mostraremos técnicas já testadas e como encontrar problemas e definir soluções.</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="w-fit text-white bg-[#FF9100] p-3 rounded-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.59 17.74c-.629.422-2.277 1.282-1.273 2.358c.49.526 1.037.902 1.723.902h3.92c.686 0 1.233-.376 1.723-.902c1.004-1.076-.644-1.936-1.273-2.357a4.29 4.29 0 0 0-4.82 0M20 12.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0M10 6h5m-5-3h8M7 9.5V14c0 .943 0 1.414-.293 1.707S5.943 16 5 16H4c-.943 0-1.414 0-1.707-.293S2 14.943 2 14v-2.5c0-.943 0-1.414.293-1.707S3.057 9.5 4 9.5zm0 0h5M6.5 5a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/></svg>
+                </div>
+                <h4>Acompanhamento</h4>
+                <p class="text-[#757575] w-80">Turma limitada a 10 pessoas para uma melhor qualidade de aprendizado e maior atenção do instrutor.</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="w-fit text-white bg-[#FF9100] p-3 rounded-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="28" viewBox="0 0 640 512"><path fill="currentColor" d="M204.8 230.4c-10.6-14.1-30.7-17-44.8-6.4s-17 30.7-6.4 44.8l38.1 50.8c4.8 6.4 4.1 15.3-1.5 20.9l-12.8 12.8c-6.7 6.7-17.6 6.2-23.6-1.1L64 244.4V96c0-17.7-14.3-32-32-32S0 78.3 0 96v218.4c0 10.9 3.7 21.5 10.5 30l104.1 134.3c5 6.5 8.4 13.9 10.4 21.7c1.8 6.9 8.1 11.6 15.3 11.6H272c8.8 0 16-7.2 16-16V384c0-27.7-9-54.6-25.6-76.8zM608 64c-17.7 0-32 14.3-32 32v148.4l-89.8 107.8c-6 7.2-17 7.7-23.6 1.1l-12.8-12.8c-5.6-5.6-6.3-14.5-1.5-20.9l38.1-50.8c10.6-14.1 7.7-34.2-6.4-44.8s-34.2-7.7-44.8 6.4l-57.6 76.8C361 329.4 352 356.3 352 384v112c0 8.8 7.2 16 16 16h131.7c7.1 0 13.5-4.7 15.3-11.6c2-7.8 5.4-15.2 10.4-21.7l104.1-134.3c6.8-8.5 10.5-19.1 10.5-30V96c0-17.7-14.3-32-32-32"/></svg>
+                </div>
+                <h4>Mão na massa</h4>
+                <p class="text-[#757575] w-80">Utilizaremos dados reais para aplicação da metodologia na prática.</p>
+            </div>
+        </div>
+    </section>
+
+    <section data-aos="fade-up" class="flex flex-col items-center gap-30 px-5 py-24 md:px-32 md:gap-40">
+        <div class="flex flex-col font-bold md:items-center gap-5">
+            <h3 class="flex items-center gap-2 text-[#FF9100] text-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72L5.18 9L12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg>
+                O que esperar
+            </h3>
+            <h2 class="text-3xl md:text-4xl">Resultado ao fim do curso</h2>
+            <p class="text-center text-[#757575] max-w-lg">Ao fim deste curso, você será capaz de:</p>
+        </div>
+        <div class="grid grid-cols-1 text-bold gap-16 md:grid-cols-3 md:justify-between">
+            <div class="flex flex-col gap-4 bg-[#F2F2F7] p-6 pb-28 rounded-md">
+                <svg class="text-[#FF9100]" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M10 5v5H9V5H5v8h4v-1h1v5H9v-3H5v5h7v-2h1v2h6v-2h2v4H3V3h18v12h-2v-5h-6v5h-1V9h7V5z"/></svg>
+                <p class="text-[#757575] max-w-80">Definir o canteiro e como montar um planejamento real e acertivo, alinhado com a execução.</p>
+            </div>
+            <div class="flex flex-col gap-4 bg-[#F2F2F7] p-6 pb-28 rounded-md">
+                <svg class="text-[#FF9100]" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a4 4 0 1 0 0-8a4 4 0 0 0 0 8m-6.5 3a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5M21 10.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m-9 .5a5 5 0 0 1 5 5v6H7v-6a5 5 0 0 1 5-5m-7 5c0-.693.1-1.362.288-1.994l-.17.014A3.5 3.5 0 0 0 2 17.5V22h3zm17 6v-4.5a3.5 3.5 0 0 0-3.288-3.494c.187.632.288 1.301.288 1.994v6z"/></svg>
+                <p class="text-[#757575] max-w-80">Dimensionar equipes e aferir com os índices presentes em orçamento.</p>
+            </div>
+            <div class="flex flex-col gap-4 bg-[#F2F2F7] p-6 pb-28 rounded-md">
+                <svg class="text-[#FF9100]"  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 25 25"><path fill="currentColor" d="M5.504 4.632a.9.9 0 1 0 0 1.8h.008a.9.9 0 0 0 0-1.8z"/><path fill="currentColor" fill-rule="evenodd" d="m5.16 10.408l.351-.436l-.471.584a.75.75 0 0 0 .943-.001l-.472-.583l.247.305l.365.45l-.296-.365l.156.193h.001l.001-.002l.003-.002l.008-.007l.026-.021l.09-.078A9.5 9.5 0 0 0 7.326 9.13c.65-.856 1.37-2.127 1.37-3.598a3.192 3.192 0 1 0-6.383 0c0 1.472.724 2.743 1.378 3.6a9.5 9.5 0 0 0 1.22 1.314l.09.078l.026.022l.008.006l.003.003h.001l.001.001l.08-.1l-.218.27zM3.812 5.532a1.692 1.692 0 1 1 3.385 0c0 .994-.498 1.943-1.066 2.691a8 8 0 0 1-.621.723a8 8 0 0 1-.627-.725c-.57-.747-1.07-1.697-1.07-2.69" clip-rule="evenodd"/><path fill="currentColor" d="M19.12 16.25a.9.9 0 1 0 0 1.8h.008a.9.9 0 0 0 0-1.8z"/><path fill="currentColor" fill-rule="evenodd" d="m18.656 22.173l.471-.583za.75.75 0 0 0 .944-.001l-.473-.582l.473.582l.002-.002l.002-.002l.008-.006l.027-.022l.09-.078a9.5 9.5 0 0 0 1.214-1.315c.65-.856 1.37-2.127 1.37-3.598a3.192 3.192 0 1 0-6.384 0c0 1.473.724 2.743 1.378 3.6a9.5 9.5 0 0 0 1.22 1.314l.09.078l.026.022l.009.006l.002.003zm-1.227-5.024a1.692 1.692 0 0 1 3.384 0c0 .994-.498 1.944-1.065 2.691a8 8 0 0 1-.622.723a8 8 0 0 1-.627-.724c-.57-.748-1.07-1.697-1.07-2.69" clip-rule="evenodd"/><path fill="currentColor" d="M7.95 10.727h2.76a2.153 2.153 0 1 1 0 4.306H5.97a3.653 3.653 0 0 0 0 7.307h10.652c-.18-.2-.372-.428-.566-.681a10 10 0 0 1-.563-.82H5.97a2.153 2.153 0 0 1 0-4.306h4.74a3.653 3.653 0 1 0 0-7.307H9.075a10 10 0 0 1-.555.81c-.195.258-.39.489-.57.69"/></svg>
+                <p class="text-[#757575] max-w-80">Iniciar serviços e definir o padrão de execução para aumentar produtividade da equipe.</p>
+            </div>
+            <div class="flex flex-col gap-4 bg-[#F2F2F7] p-6 pb-28 rounded-md">
+                <svg class="text-[#FF9100]" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M7 1.835A5.165 5.165 0 0 0 1.835 7a.75.75 0 0 1-1.5 0a6.665 6.665 0 0 1 10.577-5.396l.668-.667a.75.75 0 0 1 1.273.43c.153 1.13.176 1.777.1 2.872a.75.75 0 0 1-1.407.306A5.16 5.16 0 0 0 7 1.835m.625 5.338a.25.25 0 0 1 .138-.223l2.005-1.002l.367-.184a.24.24 0 0 1 .347.172c.144.911.08 1.886-.166 2.745a.5.5 0 0 1-.16.235c-.83.694-1.442 1.045-2.218 1.29a.242.242 0 0 1-.313-.235zm-1.25 0a.25.25 0 0 0-.138-.223L3.865 5.764a.24.24 0 0 0-.347.173c-.144.91-.08 1.885.166 2.744a.5.5 0 0 0 .16.235c.83.694 1.442 1.045 2.218 1.29c.157.05.313-.07.313-.234zm.737-1.295a.25.25 0 0 1-.224 0L4.68 4.774a.24.24 0 0 1-.033-.414c.213-.145.417-.264.623-.367c.474-.235.986-.393 1.683-.53a.3.3 0 0 1 .095 0c.696.137 1.208.295 1.682.53c.206.103.41.222.623.367a.24.24 0 0 1-.033.414l-.101.05zM13.665 7a.75.75 0 0 0-1.5 0a5.165 5.165 0 0 1-9.698 2.479a.75.75 0 0 0-1.406.309c-.075 1.095-.052 1.742.1 2.873a.75.75 0 0 0 1.274.43l.677-.677A6.665 6.665 0 0 0 13.665 7" clip-rule="evenodd"/></svg>
+                <p class="text-[#757575] max-w-80">Definir uma linha de produção baseada na logistica de canteiro que iremos definir.</p>
+            </div>
+            <div class="flex flex-col gap-4 bg-[#F2F2F7] p-6 pb-28 rounded-md">
+                <svg class="text-[#FF9100]" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 2048 2048"><path fill="currentColor" d="M2048 640v640h-768v512H128v128H0V0h128v128h1408v512zM128 256v384h1280V256zm1024 1408v-384H128v384zm768-512V768H128v384z"/></svg>
+                <p class="text-[#757575] max-w-80">Desenvolver as mudanças dentro do canteiro e obter resultados reais.</p>
+            </div>
+            <div class="flex flex-col gap-4 bg-[#F2F2F7] p-6 pb-28 rounded-md">
+                <svg class="text-[#FF9100]" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="m16 11.78l4.24-7.33l1.73 1l-5.23 9.05l-6.51-3.75L5.46 19H22v2H2V3h2v14.54L9.5 8z"/></svg>
+                <p class="text-[#757575] max-w-80">Apresentar os resultados e a evolução de todo o processo para serem notados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section data-aos="fade-up" class="flex items-center flex-col gap-10 px-5 py-24 md:py-38 md:px-32 font-bold md:flex-row md:justify-center md:gap-28">
+        <div class="flex flex-col gap-14">
+            <div class="flex max-w-lg flex-col items-center text-center gap-5 md:items-start md:text-start">
+                <h3 class="flex items-center gap-2 text-[#FF9100] text-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9 15c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4m4.75-7H13c0-1.48-.81-2.75-2-3.45v.95c0 .28-.22.5-.5.5s-.5-.22-.5-.5V4.14C9.68 4.06 9.35 4 9 4s-.68.06-1 .14V5.5c0 .28-.22.5-.5.5S7 5.78 7 5.5v-.95C5.81 5.25 5 6.52 5 8h-.75v1h9.5zM9 13c1.86 0 3.41-1.28 3.86-3H5.14c.45 1.72 2 3 3.86 3m12.98-6.77l.93-.83l-.75-1.3l-1.19.39c-.14-.11-.3-.2-.47-.27L20.25 3h-1.5l-.25 1.22q-.255.105-.48.27l-1.18-.39l-.75 1.3l.93.83c-.02.17-.02.35 0 .52l-.93.85l.75 1.3l1.2-.38c.13.1.28.18.43.25l.28 1.23h1.5l.27-1.22c.16-.07.3-.15.44-.25l1.19.38l.75-1.3l-.93-.85c.03-.19.02-.36.01-.53M19.5 7.75a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m-.1 3.04l-.85.28c-.1-.08-.21-.14-.33-.19l-.18-.88h-1.07l-.18.87c-.12.05-.24.12-.34.19l-.84-.28l-.54.93l.66.59c-.01.13-.01.25 0 .37l-.66.61l.54.93l.86-.27c.1.07.2.13.31.18l.18.88h1.07l.19-.87c.11-.05.22-.11.32-.18l.85.27l.54-.93l-.66-.61c.01-.13.01-.25 0-.37l.66-.59zm-1.9 2.6c-.49 0-.89-.4-.89-.89s.4-.89.89-.89s.89.4.89.89s-.4.89-.89.89"/></svg>
+                    Cases de sucesso
+                </h3>
+                <h2 class="leading-snug text-3xl md:text-4xl">Veja como as <span class="text-[#FF9100] bg-[#FFE2BC] px-2 rounded-tl-md rounded-bl-md border-r-2">metodologias</span> ensinadas no curso já têm impulsionado obras</h2>
+                <p class="text-center md:text-start text-[#757575]">Conheça o pré-obra, um dos tópicos ensinados no curso, que já trouxe resultados em obras de construtoras sergipanas.</p>
+                <img src="/assets/images/dicon.png" class="w-[5rem] border-b-2 pb-2 hover:border-[#FFE2BC] transition-[border] duration-150 ease-in-out border-[#FF9100] hover:cursor-pointer">
+            </div>
+        </div>
+        <div id="video-player" class="rounded-2xl w-full h-[15rem] md:w-xl md:h-[20rem]">
+            <img 
+                src="/assets/images/play-video.png"
+                class="w-full h-full object-cover rounded-2xl hover:cursor-pointer"
+            />
+        </div>
+    </section>
+    
+    <section data-aos="fade-up" class="flex items-center flex-col gap-10 px-5 py-24 md:py-38 md:px-32 font-bold md:flex-row-reverse md:justify-center md:gap-28">
+        <div class="flex flex-col gap-14">
+            <div class="flex max-w-lg flex-col items-center text-center gap-5 md:items-start md:text-start">
+                <h3 class="flex items-center gap-2 text-[#FF9100] text-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><defs><mask id="ipTGuideBoard0"><g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><path stroke-linecap="round" d="M24 4v37"/><path fill="#555555" d="M24 8h15.545L42 12l-2.455 4H24zm0 14H8.455L6 26l2.455 4H24z"/><path stroke-linecap="round" d="M16 42h16"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTGuideBoard0)"/></svg>
+                    Nosso curso, seu guia
+                </h3>
+                <h2 class="leading-snug text-3xl md:text-4xl">O melhor curso para impulsionar as suas obras para o mais <span class="text-[#FF9100] bg-[#FFE2BC] px-2 rounded-tl-md rounded-bl-md border-r-2">alto nível</span></h2>
+                <p class="text-center md:text-start text-[#757575]">Entenda como este curso trará uma série de ferramentas para aplicar em suas obras, gerando produtividade, redução de custos e prazos.</p>
+                <a href="#">
+                    <div class="p-1 bg-gradient-to-r from-[#FF9100] to-[#FFC271] hover:to-[#FF9100] transition duration-200 ease-in-out w-fit rounded-sm">
+                        <button class="flex hover:cursor-pointer items-center gap-1 font-bold bg-white py-2 px-3 hover:bg-neutral-50 transition duration-200 ease-in-out">
+                            <svg class="text-[#FF9100]" xmlns="http://www.w3.org/2000/svg" width="15.75" height="14" viewBox="0 0 576 512"><path fill="currentColor" d="M256 32c-17.7 0-32 14.3-32 32v101.9c0 5.6-4.5 10.1-10.1 10.1c-3.6 0-7-1.9-8.8-5.1l-48-83.9C83 123.5 32 199.8 32 288v64h512v-66.4c-.9-87.2-51.7-162.4-125.1-198.6l-48 83.9c-1.8 3.2-5.2 5.1-8.8 5.1c-5.6 0-10.1-4.5-10.1-10.1V64c0-17.7-14.3-32-32-32zM16.6 384C7.4 384 0 391.4 0 400.6c0 4.7 2 9.2 5.8 11.9C27.5 428.4 111.8 480 288 480s260.5-51.6 282.2-67.5c3.8-2.8 5.8-7.2 5.8-11.9c0-9.2-7.4-16.6-16.6-16.6z"/></svg>
+                            <p class="bg-gradient-to-r from-[#FF9100] to-[#FFC271] bg-clip-text text-transparent">Inscreva-se agora</p>
+                        </button>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="video-player-2" class="rounded-2xl w-full h-[15rem] md:w-xl md:h-[20rem]">
+            <img 
+                src="/assets/images/thumbnail-2.png"
+                class="w-full h-full object-cover rounded-2xl hover:cursor-pointer"
+            />
+        </div>
+    </section>
+
+    <section data-aos="fade-up" class="flex items-center flex-col gap-10 px-5 py-24 md:py-38 md:px-32 font-bold md:flex-row md:justify-center md:gap-72">
+        <div class="flex flex-col gap-14">
+            <div class="flex max-w-lg flex-col items-center text-center gap-5 md:items-start md:text-start">
+                <h3 class="flex items-center gap-2 text-[#FF9100] text-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9 15c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4m4.75-7H13c0-1.48-.81-2.75-2-3.45v.95c0 .28-.22.5-.5.5s-.5-.22-.5-.5V4.14C9.68 4.06 9.35 4 9 4s-.68.06-1 .14V5.5c0 .28-.22.5-.5.5S7 5.78 7 5.5v-.95C5.81 5.25 5 6.52 5 8h-.75v1h9.5zM9 13c1.86 0 3.41-1.28 3.86-3H5.14c.45 1.72 2 3 3.86 3m12.98-6.77l.93-.83l-.75-1.3l-1.19.39c-.14-.11-.3-.2-.47-.27L20.25 3h-1.5l-.25 1.22q-.255.105-.48.27l-1.18-.39l-.75 1.3l.93.83c-.02.17-.02.35 0 .52l-.93.85l.75 1.3l1.2-.38c.13.1.28.18.43.25l.28 1.23h1.5l.27-1.22c.16-.07.3-.15.44-.25l1.19.38l.75-1.3l-.93-.85c.03-.19.02-.36.01-.53M19.5 7.75a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m-.1 3.04l-.85.28c-.1-.08-.21-.14-.33-.19l-.18-.88h-1.07l-.18.87c-.12.05-.24.12-.34.19l-.84-.28l-.54.93l.66.59c-.01.13-.01.25 0 .37l-.66.61l.54.93l.86-.27c.1.07.2.13.31.18l.18.88h1.07l.19-.87c.11-.05.22-.11.32-.18l.85.27l.54-.93l-.66-.61c.01-.13.01-.25 0-.37l.66-.59zm-1.9 2.6c-.49 0-.89-.4-.89-.89s.4-.89.89-.89s.89.4.89.89s-.4.89-.89.89"/></svg>
+                    Conheça seus professores
+                </h3>
+                <h2 class="leading-snug text-3xl md:text-4xl">Engenheiros com anos de experiência real em canteiros de <span class="text-[#FF9100] bg-[#FFE2BC] px-2 rounded-tl-md rounded-bl-md border-r-2">obra</span></h2>
+                <p class="text-center md:text-start text-[#757575]">Conheça a equipe de especialistas que compartilhará com você todos os seus conhecimentos adquiridos ao longo de suas carreiras.</p>
+            </div>
+        </div>
+        <div class="rounded-2xl text-center flex flex-col items-center p-8 gap-5 bg-[#F2F2F7] justify-center max-w-sm">
+            <img src="/assets/images/teacher.png" class="w-56" />
+            <h4>Marcel Macedo</h4>
+            <p class="text-[#757575] font-semibold">CEO, BuildMate | Especialista em Lean Construction</p>
+            <div class="flex text-[#757575] items-center gap-3">
+                <a href="https://www.linkedin.com/in/marcel-macedo-601615218/" target="_blank">
+                    <button class="hover:cursor-pointer hover:text-[#434343] transition-[color] duration-150 ease-in-out">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>
+                    </button>
+                </a>
+                <a href="https://www.instagram.com/marcelmacedobf/" target="_blank">
+                    <button class="hover:cursor-pointer hover:text-[#434343] transition-[color] duration-150 ease-in-out">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a79 79 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465l-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78 78 0 0 1-2.189-.023l-.194-.006a63 63 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.771-1.153a4.9 4.9 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428l-.03-.712l-.005-.194A79 79 0 0 1 2 13.028v-2.056a79 79 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.9 4.9 0 0 1 3.68 3.678a4.9 4.9 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5"/></svg>                    
+                    </button>
+                </a>
+            </div>
+        </div>
     </section>
 
     <script src="/scripts/index.js"></script>
