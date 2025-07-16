@@ -18,15 +18,15 @@ function getTimeLeft(endDate) {
 }
 
 function updateTimer() {
-    const DATE_THE_COURSE_WILL_HAPPEN = new Date("2025-08-07")
+    const SUBSCRIPTION_DEADLINE = new Date("2025-08-07")
     setInterval(() => {
-        const timer = getTimeLeft(DATE_THE_COURSE_WILL_HAPPEN)
+        const timer = getTimeLeft(SUBSCRIPTION_DEADLINE)
         document.querySelector("#days").innerHTML = timer.daysLeft
         document.querySelector("#hours").innerHTML = timer.hoursLeft
         document.querySelector("#minutes").innerHTML = timer.minutesLeft
         document.querySelector("#seconds").innerHTML = timer.secondsLeft
 
-        if (DATE_THE_COURSE_WILL_HAPPEN.getTime() - new Date().getTime() <= 0) {
+        if (SUBSCRIPTION_DEADLINE.getTime() - new Date().getTime() <= 0) {
             document.querySelector("#timer").innerHTML = "🎉CURSO EM ANDAMENTO!"
             clearInterval(1)
         }
