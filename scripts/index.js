@@ -16,11 +16,25 @@ function accordion() {
 
 function onClickThumbnail() {
     const videoplayerdiv = document.querySelector("#video-player")
+    const videoplayerdiv2 = document.querySelector("#video-player-2")
+
     videoplayerdiv.addEventListener("click", () => {
         videoplayerdiv.innerHTML = `
             <iframe
                 class="w-full h-full rounded-2xl"
                 src="https://www.youtube.com/embed/I9lJj6GhlYg?autoplay=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `
+
+    videoplayerdiv2.addEventListener("click", () => {
+        videoplayerdiv2.innerHTML = `
+            <iframe
+                class="w-full h-full rounded-2xl"
+                src="https://www.youtube.com/embed/ujbGhVSGtKo?autoplay=1"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
