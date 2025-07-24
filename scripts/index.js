@@ -29,6 +29,7 @@ function onClickThumbnail() {
                 allowfullscreen>
             </iframe>
         `
+    })
 
     videoplayerdiv2.addEventListener("click", () => {
         videoplayerdiv2.innerHTML = `
